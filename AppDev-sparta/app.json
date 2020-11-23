@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "AppDev-sparta",
+    "slug": "AppDev-sparta",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "com.narafu.AppDevsparta",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4190998958076636~9774084528"
+      }
+    },
+    "android": {
+      "package": "com.narafu.AppDevsparta",
+      "versionCode": 1,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4190998958076636~6683874995"
+      }
+    }
+  }
+}
