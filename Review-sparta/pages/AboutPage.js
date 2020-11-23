@@ -20,7 +20,7 @@ export default function AboutPage({ navigation }) {
             <View style={styles.contentContainer}>
                 <Image style={styles.mainImg} source={mainImg} />
                 <Text style={styles.descTitleText}>많은 내용을 간결하게 담아내려 노력했습니다!</Text>
-                <Text style={styles.descContentsText}>꼭 완주하셔서 꼭 여러분 것으로 만들어 가시길 바랍니다.</Text>
+                <Text style={styles.descContentsText}>꼭 완주하셔서 꼭 여러분 것으로 만들어 가시길 바랍니다</Text>
                 <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttonText}>인스타계정</Text>
                 </TouchableOpacity>
