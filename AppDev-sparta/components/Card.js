@@ -15,7 +15,7 @@ export default function Card({ content, navigation }) {
         // Card.js에 들어오자마자 전면 광고 준비하느라 useEffect에 설정
         //애드몹도 외부 API 이므로 실행 순서를 지키기위해 async/await 사용!
         //안드로이드와 IOS 각각 광고 준비 키가 다르기 때문에 디바이스 성격에 따라 다르게 초기화 시켜줘야 합니다.
-        Platform.OS === 'ios' ? AdMobInterstitial.setAdUnitID("ca-app-pub-4190998958076636/1843446000") : AdMobInterstitial.setAdUnitID("ca-app-pub-4190998958076636/9530364335")
+        Platform.OS === 'ios' ? AdMobInterstitial.setAdUnitID("ca-app-pub-4190998958076636/2428881313") : AdMobInterstitial.setAdUnitID("ca-app-pub-4190998958076636/3741962983")
 
         AdMobInterstitial.addEventListener("interstitialDidLoad", () =>
             console.log("interstitialDidLoad")

@@ -147,14 +147,14 @@ export default function MainPage({ navigation, route }) {
                     <AdMobBanner
                         bannerSize="fullBanner"
                         servePersonalizedAds={true}
-                        adUnitID="ca-app-pub-4190998958076636/8600426046"
+                        adUnitID="ca-app-pub-4190998958076636/5904064226"
                         style={styles.banner}
                     />
                 ) : (
                         <AdMobBanner
                             bannerSize="fullBanner"
                             servePersonalizedAds={true}
-                            adUnitID="ca-app-pub-4190998958076636/7287344375"
+                            adUnitID="ca-app-pub-4190998958076636/1166742865"
                             style={styles.banner}
                         />
                     )}

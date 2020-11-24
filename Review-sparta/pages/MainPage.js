@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import mainImg from '../assets/main.png';
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert, Platform } from 'react-native';
 import Card from '../components/Card';
 import Loading from '../components/Loading';
 import * as Location from 'expo-location';
 import axios from 'axios';
 import { firebase_db } from '../firebaseConfig';
+import { AdMobBanner, AdMobInterstitial } from 'expo-ads-admob';
 
 export default function MainPage({ navigation }) {
 
@@ -98,6 +99,20 @@ export default function MainPage({ navigation }) {
                 })
             }
             </View>
+            <View style={{ padding: 20 }}></View>
+            {
+                Platform.OS === 'ios' ? (
+                    <AdMobBanner
+                        bannerSize="smartBannerLandscape"
+                        servePersonalizedAds={true}
+                        adUnitID='ca-app-pub-4190998958076636/2679985143' />
+                ) : (
+                        <AdMobBanner
+                            bannerSize="fullBanner"
+                            servePersonalizedAds={true}
+                            adUnitID='ca-app-pub-4190998958076636/1358314555' />
+                    )
+            }
         </ScrollView>
     )
 }
