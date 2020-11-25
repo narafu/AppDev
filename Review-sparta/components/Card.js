@@ -5,15 +5,13 @@ import { AdMobInterstitial } from 'expo-ads-admob';
 export default function Card({ content, navigation }) {
 
     useEffect(() => {
-        // Platform.OS === 'ios' ? AdmobInterstitial.setAdUnitID('ca-app-pub-4190998958076636/2679985143') : AdmobInterstitial.setAdUnitID('ca-app-pub-4190998958076636/1358314555');
-        // AdmobInterstitial.addEventListener("interstitialDidClose", () => {
-            // navigation.navigate('DetailPage', { idx: content.idx });
-        // });
+        Platform.OS === 'ios' ? AdMobInterstitial.setAdUnitID('ca-app-pub-4190998958076636/4590982550') : AdMobInterstitial.setAdUnitID('ca-app-pub-4190998958076636/7740740134');
     }, [])
 
     const goDetail = async () => {
-        await AdmobInterstitial.requestAdAsync({ servePersonalizedAds: true });
-        await AdmobInterstitial.showAdAsync();
+        await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
+        await AdMobInterstitial.showAdAsync();
+        await navigation.navigate('DetailPage', { idx: content.idx });
     }
 
     return (

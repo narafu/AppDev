@@ -6,7 +6,7 @@ import Loading from '../components/Loading';
 import * as Location from 'expo-location';
 import axios from 'axios';
 import { firebase_db } from '../firebaseConfig';
-import { AdMobBanner, AdMobInterstitial } from 'expo-ads-admob';
+import { AdMobBanner } from 'expo-ads-admob';
 
 export default function MainPage({ navigation }) {
 
